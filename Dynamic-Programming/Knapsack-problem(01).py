@@ -5,7 +5,7 @@ wt=list(map(int,input().split())) # weights for each value
 weight=int(input())  # Required weight
 t=[]
 for i in range(len(val)):
-    t.append([0]*8)
+    t.append([0]*(weight+1))
 for i in range(1,len(val)):
     for j in range(1,weight+1):
         if j<wt[i]:
